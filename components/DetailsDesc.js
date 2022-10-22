@@ -15,7 +15,7 @@ const DetailsDesc = ({ data }) => {
           width: "100%",
           flexDirection: "row",
           justifyContent: "space-between",
-          alignItems: "center",
+          alignItems: "center",          
         }}
       >
         <NFTTitle
@@ -28,7 +28,7 @@ const DetailsDesc = ({ data }) => {
         <EthPrice price={data.price} />
       </View>
 
-      <View style={{ marginVertical: SIZES.extraLarge * 1.5 }}>
+      <View style={{ marginVertical: SIZES.large }}>
         <Text
           style={{
             fontSize: SIZES.font,
@@ -69,7 +69,7 @@ const DetailsDesc = ({ data }) => {
                 }
               }}
             >
-              {readMore ? " Show Less" : " Read More"}
+              {readMore ? " Masquer" : " Reveler"}
             </Text>
           </Text>
         </View>

@@ -22,7 +22,7 @@ export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
           color: COLORS.primary,
         }}
       >
-        by {subTitle}
+        Par {subTitle}
       </Text>
     </View>
   );
@@ -97,7 +97,7 @@ export const EndDate = () => {
           color: COLORS.primary,
         }}
       >
-        Ending in
+        Disponible:
       </Text>
       <Text
         style={{
@@ -106,7 +106,7 @@ export const EndDate = () => {
           color: COLORS.primary,
         }}
       >
-        12h 30m
+        Saison Festival
       </Text>
     </View>
   );

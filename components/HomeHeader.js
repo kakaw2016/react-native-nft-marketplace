@@ -21,7 +21,7 @@ const HomeHeader = ({ onSearch }) => {
         <Image
           source={assets.logo}
           resizeMode="contain"
-          style={{ width: 90, height: 25 }}
+          style={{ width: 90, height: 45 }}
         />
 
         <View style={{ width: 45, height: 45 }}>
@@ -52,7 +52,7 @@ const HomeHeader = ({ onSearch }) => {
             color: COLORS.white,
           }}
         >
-          Hello Victoria 👋
+          Bonjour Corval 👋
         </Text>
 
         <Text
@@ -63,7 +63,7 @@ const HomeHeader = ({ onSearch }) => {
             marginTop: SIZES.base / 2,
           }}
         >
-          Let’s find masterpiece Art
+          Atipik House / Logements Reves 
         </Text>
       </View>
 
@@ -72,9 +72,10 @@ const HomeHeader = ({ onSearch }) => {
           style={{
             width: "100%",
             borderRadius: SIZES.font,
-            backgroundColor: COLORS.gray,
+            backgroundColor: 'rgb(199, 199, 204)',
             flexDirection: "row",
             alignItems: "center",
+            
             paddingHorizontal: SIZES.font,
             paddingVertical: SIZES.small - 2,
           }}
@@ -85,7 +86,7 @@ const HomeHeader = ({ onSearch }) => {
             style={{ width: 20, height: 20, marginRight: SIZES.base }}
           />
           <TextInput
-            placeholder="Search NFTs"
+            placeholder="Recherche Chambre, Cuisine, ..."
             style={{ flex: 1 }}
             onChangeText={onSearch}
           />

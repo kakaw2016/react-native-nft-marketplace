@@ -50,11 +50,11 @@ const Details = ({ route, navigation }) => {
           zIndex: 1,
         }}
       >
-        <RectButton minWidth={170} fontSize={SIZES.large} {...SHADOWS.dark} />
+        <RectButton minWidth={170} fontSize={SIZES.small} {...SHADOWS.dark} />
       </View>
 
       <FlatList
-        data={data.bids}
+        data={data.RESERVs}
         renderItem={({ item }) => <DetailsBid bid={item} />}
         keyExtractor={(item) => item.id}
         showsVerticalScrollIndicator={false}
@@ -68,7 +68,7 @@ const Details = ({ route, navigation }) => {
             <View style={{ padding: SIZES.font }}>
               <DetailsDesc data={data} />
 
-              {data.bids.length > 0 && (
+              {data.RESERVs.length > 0 && (
                 <Text
                   style={{
                     fontSize: SIZES.font,
@@ -76,7 +76,7 @@ const Details = ({ route, navigation }) => {
                     color: COLORS.primary,
                   }}
                 >
-                  Current Bid
+                  Reservation en Cours
                 </Text>
               )}
             </View>

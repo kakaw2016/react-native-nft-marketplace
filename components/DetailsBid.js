@@ -37,7 +37,7 @@ const DetailsBid = ({ bid }) => {
             color: COLORS.primary,
           }}
         >
-          Bid placed by {bid.name}
+          Reserve par {bid.name}
         </Text>
         <Text
           style={{

@@ -9,9 +9,10 @@ import Details from "./screens/Details";
 const theme = {
   ...DefaultTheme,
   colors: {
-    ...DefaultTheme.colors,
-    background: "transparent",
+    ...DefaultTheme.colors,    
+    background: 'rgb(199, 199, 204)',
   },
+  
 };
 
 const Stack = createStackNavigator();
